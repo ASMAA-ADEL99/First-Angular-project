@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+:root{
+    --mainColor:#1abc9c;
+    --secondColor:#2c3e50;
+    scroll-behavior: smooth;
+}
+
+.art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & .line{
+        width: 90px;
+        height: 3.5px;
+        background-color: white;
+        margin: 0px 10px;
+    }
+}
+.active{
+  background-color: var(--mainColor) !important;
+  border-radius: 5px !important;
+}
+

@@ -1,0 +1,48 @@
+.contact{
+    margin-top: 55px;
+    height: 90vh;
+    & .container{
+        padding-top:90px;
+        padding-bottom: 30px;
+        & .contact-title{
+            color:#2c3e50;
+            margin-bottom: 80px;
+            & h2{
+                font-size: 40px;
+            }
+        }
+        & form {
+            & .form-control{
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                background-color: transparent;
+
+            }
+            & label{
+                color: #1abc9c;
+               
+            }
+            & .label-hidden{
+                display: none;  
+            }
+            & .label-visible{
+                display: block;
+            }
+            & .form-control:focus{
+                box-shadow: none;
+                
+            }
+            & button{
+                width: fit-content;
+                background-color: #1abc9c;
+            }
+            
+
+        }
+    
+       
+    }
+    }
+  
+    

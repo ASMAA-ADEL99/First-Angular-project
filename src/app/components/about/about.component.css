@@ -1,0 +1,10 @@
+.about{
+    background-color: #1abc9c;
+    height: 90vh;
+    margin-top: 55px;
+    & .about-info{
+        width: 88%;
+    }
+  
+
+}

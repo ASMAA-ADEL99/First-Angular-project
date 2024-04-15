@@ -1,0 +1,27 @@
+<section class="portfolio ">
+    <div class="container  ">
+        <div class="portfolio-title text-center">
+            <h2 class="fw-bold">PORTFOLIO COMPONENT</h2>
+            <div class="art my-3">
+                <div class="line bg-black me-3"></div>
+                <i class="fa-solid fa-star"></i>
+                <div class="line bg-black ms-3"></div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-4" *ngFor="let img of imgUrl">
+                <div class="item position-relative" (click)="showImage(img)">
+                    <img [src]="img" alt="" class="w-100 rounded-3  " alt="">
+                    <div class="layout position-absolute rounded-3 d-flex  justify-content-center align-items-center">
+                         <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+    </div>
+    <div class="active-image d-flex justify-content-center align-items-center bg-primary bg-opacity-25" *ngIf="activeImageURL" (click)="closeImage()">
+        <img [src]="activeImageURL" alt="Active Image">
+    </div>
+
+</section>
